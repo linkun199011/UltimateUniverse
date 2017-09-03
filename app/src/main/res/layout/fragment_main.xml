@@ -1,133 +1,169 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <FrameLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" >
+        android:layout_weight="1">
+
     </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@drawable/tab_bg" >
+        android:layout_height="55dp"
+        android:background="#FFFBF0">
 
         <RelativeLayout
-            android:id="@+id/message_layout"
+            android:id="@+id/camp_layout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/message_image"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/camp_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/message_unselected" />
+                    android:contentDescription="@string/ImageNotFound"
+                    android:src="@drawable/footer_camp_unselected" />
 
                 <TextView
-                    android:id="@+id/message_text"
+                    android:id="@+id/camp_text"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="17sp"
                     android:layout_gravity="center_horizontal"
-                    android:text="消息"
-                    android:textColor="#82858b" />
+                    android:text="@string/footer_camp"
+                    android:textColor="@color/footerText" />
             </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/contacts_layout"
+            android:id="@+id/bag_layout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" >
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/contacts_image"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/bag_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/contacts_unselected" />
+                    android:contentDescription="@string/ImageNotFound"
+                    android:src="@drawable/footer_bag_unselected" />
 
                 <TextView
-                    android:id="@+id/contacts_text"
+                    android:id="@+id/bag_text"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="17sp"
                     android:layout_gravity="center_horizontal"
-                    android:text="联系人"
-                    android:textColor="#82858b" />
+                    android:text="@string/footer_bag"
+                    android:textColor="@color/footerText" />
             </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/news_layout"
+            android:id="@+id/equipment_layout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" >
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/news_image"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/equipment_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/news_unselected" />
+                    android:contentDescription="@string/ImageNotFound"
+                    android:src="@drawable/footer_equipment_unselected" />
 
                 <TextView
-                    android:id="@+id/news_text"
+                    android:id="@+id/equipment_text"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="17sp"
                     android:layout_gravity="center_horizontal"
-                    android:text="动态"
-                    android:textColor="#82858b" />
+                    android:text="@string/footer_equipment"
+                    android:textColor="@color/footerText" />
             </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/setting_layout"
+            android:id="@+id/battle_layout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" >
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/setting_image"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/battle_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/setting_unselected" />
+                    android:contentDescription="@string/ImageNotFound"
+                    android:src="@drawable/footer_battle_unselected" />
 
                 <TextView
-                    android:id="@+id/setting_text"
+                    android:id="@+id/battle_text"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="17sp"
                     android:layout_gravity="center_horizontal"
-                    android:text="设置"
-                    android:textColor="#82858b" />
+                    android:text="@string/footer_battle"
+                    android:textColor="@color/footerText" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/settings_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/ImageNotFound"
+                    android:src="@drawable/footer_settings_unselected" />
+
+                <TextView
+                    android:id="@+id/settings_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/footer_settings"
+                    android:textColor="@color/footerText" />
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>

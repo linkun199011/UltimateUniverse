@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">UltimateUniverse</string>
     <string name="action_settings">Settings</string>
+
+    <string name="footer_camp">营地</string>
+    <string name="footer_equipment">装备</string>
+    <string name="footer_bag">背包</string>
+    <string name="footer_battle">战斗</string>
+    <string name="footer_settings">设置</string>
+    <string name="ImageNotFound">无图片</string>
 </resources>

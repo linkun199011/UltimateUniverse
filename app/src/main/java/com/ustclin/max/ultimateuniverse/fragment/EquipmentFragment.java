@@ -1,25 +1,20 @@
-package com.ustclin.max.ultimateuniverse;
+package com.ustclin.max.ultimateuniverse.fragment;
 
-import android.app.Activity;
 import android.app.Fragment;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-public class SettingFragment extends Fragment {
+public class EquipmentFragment extends Fragment {
 
-    private Activity mActivity;
-
-    public void setActivity(Activity activity) {
-        mActivity = activity;
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Log.e("settingFragment", "mActivity = null");
+        Log.e("EquipmentFragment", "mActivity = null");
         return null;
     }
+
 }
