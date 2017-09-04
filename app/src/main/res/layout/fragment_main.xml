@@ -20,8 +20,7 @@
             android:id="@+id/camp_layout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            >
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,36 +42,6 @@
                     android:layout_height="17sp"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/footer_camp"
-                    android:textColor="@color/footerText" />
-            </LinearLayout>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/bag_layout"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/bag_image"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/ImageNotFound"
-                    android:src="@drawable/footer_bag_unselected" />
-
-                <TextView
-                    android:id="@+id/bag_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="17sp"
-                    android:layout_gravity="center_horizontal"
-                    android:text="@string/footer_bag"
                     android:textColor="@color/footerText" />
             </LinearLayout>
         </RelativeLayout>
@@ -103,6 +72,36 @@
                     android:layout_height="17sp"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/footer_equipment"
+                    android:textColor="@color/footerText" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bag_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bag_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/ImageNotFound"
+                    android:src="@drawable/footer_bag_unselected" />
+
+                <TextView
+                    android:id="@+id/bag_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/footer_bag"
                     android:textColor="@color/footerText" />
             </LinearLayout>
         </RelativeLayout>

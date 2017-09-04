@@ -26,6 +26,11 @@ import com.ustclin.max.ultimateuniverse.fragment.SettingsFragment;
  */
 public class FragmentActivity extends Activity implements OnClickListener {
     private Context mContext;
+    private final int CAMP = 0;
+    private final int EQUIPMENT = 1;
+    private final int BAG = 2;
+    private final int BATTLE = 3;
+    private final int SETTINGS = 4;
 
     // 营地
     private CampFragment campFragment;
@@ -65,7 +70,7 @@ public class FragmentActivity extends Activity implements OnClickListener {
         initViews();
         fragmentManager = getFragmentManager();
         // 第一次启动时选中第0个tab
-        setTabSelection(0);
+        setTabSelection(CAMP);
     }
 
     /**
@@ -110,19 +115,19 @@ public class FragmentActivity extends Activity implements OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.camp_layout:
-                setTabSelection(0);
+                setTabSelection(CAMP);
                 break;
             case R.id.equipment_layout:
-                setTabSelection(1);
+                setTabSelection(EQUIPMENT);
                 break;
             case R.id.bag_layout:
-                setTabSelection(2);
+                setTabSelection(BAG);
                 break;
             case R.id.battle_layout:
-                setTabSelection(3);
+                setTabSelection(BATTLE);
                 break;
             case R.id.settings_layout:
-                setTabSelection(4);
+                setTabSelection(SETTINGS);
                 break;
             default:
                 break;
@@ -142,7 +147,7 @@ public class FragmentActivity extends Activity implements OnClickListener {
         // 先隐藏掉所有的Fragment，以防止有多个Fragment显示在界面上的情况
         hideFragments(transaction);
         switch (index) {
-            case 0:
+            case CAMP:
                 // 当点击了消息tab时，改变控件的图片和文字颜色
                 campImage.setImageResource(R.drawable.footer_camp_selected);
                 campText.setTextColor(mContext.getResources().getColor(R.color.footerText));
@@ -155,7 +160,7 @@ public class FragmentActivity extends Activity implements OnClickListener {
                     transaction.show(campFragment);
                 }
                 break;
-            case 1:
+            case EQUIPMENT:
                 // 当点击了联系人tab时，改变控件的图片和文字颜色
                 equipmentImage.setImageResource(R.drawable.footer_equipment_selected);
                 equipmentText.setTextColor(mContext.getResources().getColor(R.color.footerText));
@@ -168,7 +173,7 @@ public class FragmentActivity extends Activity implements OnClickListener {
                     transaction.show(equipmentFragment);
                 }
                 break;
-            case 2:
+            case BAG:
                 // 当点击了动态tab时，改变控件的图片和文字颜色
                 bagImage.setImageResource(R.drawable.footer_bag_selected);
                 bagText.setTextColor(mContext.getResources().getColor(R.color.footerText));
@@ -182,7 +187,7 @@ public class FragmentActivity extends Activity implements OnClickListener {
                 }
                 break;
 
-            case 3:
+            case BATTLE:
                 // 当点击了动态tab时，改变控件的图片和文字颜色
                 battleImage.setImageResource(R.drawable.footer_battle_selected);
                 battleText.setTextColor(mContext.getResources().getColor(R.color.footerText));
@@ -195,7 +200,7 @@ public class FragmentActivity extends Activity implements OnClickListener {
                     transaction.show(bagFragment);
                 }
                 break;
-            case 4:
+            case SETTINGS:
                 // 当点击了设置tab时，改变控件的图片和文字颜色
                 settingsImage.setImageResource(R.drawable.footer_settings_selected);
                 settingsText.setTextColor(mContext.getResources().getColor(R.color.footerText));
