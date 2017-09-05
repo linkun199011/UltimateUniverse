@@ -24,7 +24,7 @@ import com.ustclin.max.ultimateuniverse.fragment.SettingsFragment;
  *
  * @author LinKun
  */
-public class FragmentActivity extends Activity implements OnClickListener {
+public class MainTabActivity extends Activity implements OnClickListener {
     private Context mContext;
     private final int CAMP = 0;
     private final int EQUIPMENT = 1;
@@ -197,7 +197,7 @@ public class FragmentActivity extends Activity implements OnClickListener {
                     transaction.add(R.id.content, battleFragment);
                 } else {
                     // 如果NewsFragment不为空，则直接将它显示出来
-                    transaction.show(bagFragment);
+                    transaction.show(battleFragment);
                 }
                 break;
             case SETTINGS:
